@@ -1,3 +1,282 @@
+/* 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+	line-height: 1;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body{
+	border: 1px solid white;
+	margin: 60px;
+	padding:100px;
+ }
+
+*{
+border: 1px solid black;
+}
+
+header{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    color: gray;
+    }
+        
+.logo{
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    justify-content:space-evenly;
+      align-items: center;
+    width: auto;
+    color: gray;
+     width: 90%;
+}
+
+#a{
+    color: gray;
+    font-size: 40px;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+    vertical-align: middle;
+    justify-content:space-between;
+    align-items:center;
+	margin: 5% 2%;
+}	
+.container h1{
+    width: 100%;
+    font-size: 60px;
+    text-align:center;
+}
+.container h2{
+    width: 100%;
+    font-size:20px;
+    text-align:center;
+    border: 1.5px solid black;
+}
+
+.container img{
+	display: flex;
+	text-align:right;
+}	
+
+.middle-img{
+	width:100%;
+	margin:20px 0 20px 0;
+}
 
 
+.sectionclass1{
+	display:flex;
+	flex-direction:row;
+    justify-content:space-between;
+    margin:10px 0 30px 0;  
+}
+	
+.sectionclass2{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:10px 0 30px 0;
+}
+
+
+.Features{
+    margin-right:50px;
+}
+
+.Services{
+    margin-right:50px;
+}
+
+.Products{
+    margin-right:50px;
+}
+
+
+.contact{
+	margin-top:15px;
+	font-size: 60px;
+}
+
+footer{
+	text-align:center;
+}
+	
+/* Codes for 800px start here */
+@media (max-width: 800px){
+        
+nav {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+    
+.links{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-evenly;
+    align-items:center;
+    margin: 2%;
+    }
+
+.logo{
+    width: 40%;
+    }       
+     
+.container div .h1h2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    vertical-align: middle;
+    justify-content:space-between;
+    align-items:center;
+    }	
+
+.container img{
+    display: none;
+    }	
+
+.address{
+    margin-bottom: 20px;
+    }  
+}
+
+
+
+/* Codes for 500px start here */
+@media (max-width: 500px){
+           
+nav {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+            
+.links{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:space-evenly;
+    align-items:center;
+    border-bottom: 1px solid black;
+    margin: 2%;
+    }
+        
+            
+.logo{
+    width: 40%;
+    border-bottom: 1px solid black;
+    }       
+             
+    .container div .h1h2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    vertical-align: middle;
+    justify-content:space-between;
+    align-items:center;
+    }	
+                    
+.container img{
+    display: none;
+    }	
+        
+.sectionclass1{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    }
+                
+.sectionclass2{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:20px 0 30px 0;
+    }
+            
+.address{
+    margin-bottom: 20px;
+ }
+
+ body{
+	border: 1px solid white;
+	margin: 10px;
+	padding:10px;
+ }
+
+ .About{
+    margin-top: 30px;
+ }
+
+.Products{
+    margin-top: 30px;
+}
+ 
+ .Vision{
+    margin-top: 30px;
+}
+}
